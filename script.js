@@ -15,8 +15,6 @@ let computerScore = 0
 
 /// function that plays a single round of Rock Paper Scissors.
 
-///let playerSelection = prompt('Rock, Paper or Scissors?')
-
 function playRound(playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === 'paper' && computerSelection === 'rock') {
         let result1 = "You win! Paper beats rock";
@@ -52,4 +50,6 @@ function playRound(playerSelection, computerSelection) {
     }
 }
 
-
+const computerSelection = getComputerChoice();
+let playerSelection = prompt("choose rock, paper or scissors");
+console.log(playRound(playerSelection, computerSelection));
